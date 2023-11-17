@@ -20,13 +20,15 @@ header, main, footer{
 }
 
 
+
+
 .boks{
     width:900px;
     height: 200px;
     background-color:  lightgray;
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 20px;
+    margin: 40px;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -35,17 +37,35 @@ header, main, footer{
 }
 
 .boks-inni{
-   width: 23%; 
-   height: 15%;
+   width: 250px; 
+   height: 20px;
    background-color: #e6bd43;
    padding: 10px;
    border: none;
-   margin: auto;
-   justify-content: center;
+   margin: 20px auto;
+   justify-content: center;  
 }
+
+/*Brukte chatgpt for å få den grå boksen til å være inni og vedsiden av tekst og knapp*/
+.gra-boks{
+    height:250px;
+    width:250px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-right: 20px;
+ 
+}
+
+.tekst-container{
+    flex:1;
+    padding: 10px;
+}
+/*Til hit*/
 
 button{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#e6bd43;
     border: none;
     border-radius: 4px;
@@ -53,8 +73,82 @@ button{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-weight: bold;
+   margin-bottom: 10px;
+   
+}
+.stor-knapp{ 
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+
 }
 
+.liten-knapp{
+    background-color: transparent;
+    text-align: left; /*Brukte chatgpt for å få boksen til venstre*/
+    border: 2px solid #333;
+   justify-content: right;
+   width: 150px;
+   height: 40px;
+   margin: 20px  0; /*Brukte chatgpt for å få boksen til venstre*/
+   padding: 10px;
+   display: flex;
+   justify-content: flex-start; /*Brukte chatgpt for å få boksen til venstre*/
+   align-items: center;
+}
+
+.liten-boks{
+    height:300px;
+    width:900px;
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 30px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+
+/*Brukte chatgpt for å få teksten i h3 og article til å bli sentrert*/
+section {
+    text-align: center;
+}
+section h3{
+    margin-bottom: 20px;
+}
+section article{
+    max-width:800px;
+    margin: 0 auto;
+    text-align: left;
+}
+/*Til hit*/
+
+.default-flex{
+    flex:1;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+.default-flex article{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+ /*Brukte chatgpt for å få teksten vedsiden av hverandre og h2 sentrert*/
+.services {
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.services article{
+    width: 25%;
+    margin-bottom: 20px;
+}
+/*Til hit*/
 
 header nav ul{
     display: flex;
@@ -65,4 +159,19 @@ header nav ul{
     padding: 0.5rem;
     list-style: none;
     gap: 0.5rem;
+}
+/*Brukte chatgpt for å få linkene til de andre sidene å bytte farge og få bort understrekene*/
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: font-size 0.3s; /* chatgpt for endring av størrels når man hovrer over home ,about, portfolio og contact*/   
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+/*brukte Chatgpt for økning av størrelse når man hovrer over*/
+header nav ul li a:hover{
+    font-size: 1.2em;
 }
