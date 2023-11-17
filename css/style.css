@@ -1,0 +1,68 @@
+body{
+  margin: 0 auto;
+  width: 100%;  
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #fff; 
+   display: grid;
+   place-items: center;
+}
+
+
+header{
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+    padding: auto;
+}
+
+header, main, footer{
+   padding: 1rem;
+}
+
+
+.boks{
+    width:900px;
+    height: 200px;
+    background-color:  lightgray;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.boks-inni{
+   width: 23%; 
+   height: 15%;
+   background-color: #e6bd43;
+   padding: 10px;
+   border: none;
+   margin: auto;
+   justify-content: center;
+}
+
+button{
+    display: flex;
+    background-color:#e6bd43;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+header nav ul{
+    display: flex;
+    text-align: end;
+    justify-content:end;
+    align-items:center;
+    text-decoration: none;
+    padding: 0.5rem;
+    list-style: none;
+    gap: 0.5rem;
+}
