@@ -1,5 +1,6 @@
 body{
   margin: 0 auto;
+  max-width: 1200px;
   width: 100%;  
    font-family: Arial, Helvetica, sans-serif;
    background-color: #fff; 
@@ -9,6 +10,7 @@ body{
 
 
 header{
+   
     justify-content: space-between;
     align-items: baseline;
     text-decoration: none;
@@ -18,7 +20,6 @@ header{
 header, main, footer{
    padding: 1rem;
 }
-
 
 
 
@@ -98,6 +99,26 @@ button{
    align-items: center;
 }
 
+ .gjennomsiktig-knapp{
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 80px;
+    
+}
+
+#produkter-main h3{
+    text-align: left;
+}
+
+#produkter-main .produkt-knapper{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
 .liten-boks{
     height:300px;
     width:900px;
@@ -111,6 +132,51 @@ button{
     margin: 40px auto;
 }
 
+/*Chatgpt for å få bildene under hverandre og evt endre størrelse på bildene*/
+#container.image-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container.image-container img{
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+#container.image-container img.stort-bilde{
+    width: 60%;
+    margin-right: 2%;
+}
+
+#container.image-container img.stort-bilde2{
+    width: 47%;
+    margin-right: 2%;
+}
+
+/*Til hit*/
+
+/*Chatgpt for styling av linjen*/
+.linje{
+    border:1px;
+    height: 2px;
+    background-color: #e6bd43;
+    margin: 10x 0;
+}
+
+.portfolio-boks{
+    width: 900px;
+    height: 200px;
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    padding: 20px; 
+    margin: 40px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Brukte chatgpt for å få teksten i h3 og article til å bli sentrert*/
 section {
@@ -175,3 +241,67 @@ header nav ul li a{
 header nav ul li a:hover{
     font-size: 1.2em;
 }
+
+/*Chatgpt for artikkelkortene og styling*/
+.article-card{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.article-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article-card h2{
+    font-size:1.5rem;
+    margin-top: 10px;
+}
+
+.article-card p{
+    font-size: 1rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+.article-card .read-more {
+    display: block;
+    margin-top: 15px;
+    color: #e6bd43;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-card .read-more:hover{
+    text-decoration: underline;
+}
+
+/*Til hit*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+}
+  input{
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80%; 
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+}
+
