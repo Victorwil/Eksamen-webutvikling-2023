@@ -2,7 +2,7 @@ body{
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;  
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
    background-color: #fff; 
    display: grid;
    place-items: center;
@@ -10,7 +10,6 @@ body{
 
 
 header{
-   
     justify-content: space-between;
     align-items: baseline;
     text-decoration: none;
@@ -22,14 +21,20 @@ header, main, footer{
 }
 
 
+#logo img{
+    width: 7%;
+    height: auto;
+}
+
+
 
 .boks{
-    width:900px;
-    height: 200px;
+    width:75%;
+    height: 30%;
     background-color:  lightgray;
     border: 1px solid #ccc;
-    padding: 20px;
-    margin: 40px;
+    padding: 5%;
+    margin: 7%;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -38,10 +43,10 @@ header, main, footer{
 }
 
 .boks-inni{
-   width: 250px; 
-   height: 20px;
+   width: 30%; 
+   height: 1rem;
    background-color: #e6bd43;
-   padding: 10px;
+   padding: 1rem;
    border: none;
    margin: 20px auto;
    justify-content: center;  
@@ -49,11 +54,11 @@ header, main, footer{
 
 /*Brukte chatgpt for å få den grå boksen til å være inni og vedsiden av tekst og knapp*/
 .gra-boks{
-    height:250px;
-    width:250px;
+    height:55%;
+    width:25%;
     background-color: lightgray;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 5%;
+    margin-right: 8%;
  
 }
 
@@ -63,27 +68,63 @@ header, main, footer{
 }
 /*Til hit*/
 
+
+
 button{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:#e6bd43;
     border: none;
-    border-radius: 4px;
+    border-radius: 4%;
     cursor: pointer;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
-   margin-bottom: 10px;
-   
+   margin-bottom: 2%;
 }
+
+
+
 .stor-knapp{ 
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 95%;
 
 }
+
+.getintouch-knapp{
+    width: 35%;
+    height: 15%;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.company-name-boks{
+    display: flex;
+    width:85%;
+    height: 30%;
+    background-color:  lightgray;
+    border: 1px solid #ccc;
+    padding: 6%;
+    margin: 7%;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-boks-tekst{
+    height:225px;
+    width:400px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 450px;
+    margin-right: 10%;
+}
+
+
+
 
 .liten-knapp{
     background-color: transparent;
@@ -133,27 +174,34 @@ button{
 }
 
 /*Chatgpt for å få bildene under hverandre og evt endre størrelse på bildene*/
-#container.image-container{
+.image-container{
     display:flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-#container.image-container img{
+.image-container img{
     width: 30%;
     margin-right: 2%;
     margin-bottom: 2%;
+    height: auto;
 }
 
-#container.image-container img.stort-bilde{
+.image-container img.stort-bilde{
     width: 60%;
-    margin-right: 2%;
+    margin-right: 38%;
 }
 
-#container.image-container img.stort-bilde2{
+.image-container img.stort-bilde2{
     width: 47%;
     margin-right: 2%;
+}
+
+.image-container p {
+    text-align: center;
+    width: 100%;
 }
 
 /*Til hit*/
@@ -163,7 +211,7 @@ button{
     border:1px;
     height: 2px;
     background-color: #e6bd43;
-    margin: 10x 0;
+    
 }
 
 .portfolio-boks{
@@ -207,12 +255,13 @@ section article{
 .services {
     display:flex;
     justify-content:space-between;
+    padding: 30px;
     
 }
 
 .services article{
     width: 25%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 /*Til hit*/
 
@@ -231,15 +280,58 @@ header nav ul li a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    transition: font-size 0.3s; /* chatgpt for endring av størrels når man hovrer over home ,about, portfolio og contact*/   
-    position: relative;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
+  
 }
-/*brukte Chatgpt for økning av størrelse når man hovrer over*/
-header nav ul li a:hover{
-    font-size: 1.2em;
+
+/*Chatgpt for logoene til å ligge ved siden av hverandre, i boks med gull farge, og størrelse på boks og logoene*/
+.klient-boks{
+    width: 900px;
+    background-color: #e6bd43;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.klient-boks h4{
+    margin-bottom: 20px;
+}
+
+.klient-logo-boks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.klient-logo-boks img{
+ width: 50px;
+ margin: 10px;
+}
+
+.under-boks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 20px;
+    width: 900px;
+   margin: 0 auto;
+}
+
+.button{
+    display: flex;
+    width: 30%;
+}
+
+input{
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;    
+}
+
+button{
+    width: 70%;
 }
 
 /*Chatgpt for artikkelkortene og styling*/
@@ -282,14 +374,45 @@ header nav ul li a:hover{
 
 /*Til hit*/
 
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
 
+footer{
+    background-color: #252525;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0;
 }
+
+
+#logo-footer img{
+    width: 70px;
+    height: auto;
+}
+
+#company-copyright {
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+aside{
+    color: white;
+    display: flex;
+    flex: 1;
+}
+
+
+aside a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
   input{
     width: 80%;
     padding: 8px;
@@ -303,5 +426,15 @@ button {
     cursor: pointer;
     font-weight: bold;
     padding: 8px;
+}
+
+/*Chatgpt for å få linjen under home,portfolio osv til å bli når man trykket seg inn la inn active på hver av sidene i htmlen for å få det til å funke*/
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav a.active{
+    border-bottom: 2px solid #e6bd43;
 }
 

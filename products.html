@@ -9,12 +9,14 @@
 <body>
     <header>
         <span>
-            <a href ="index.html" id="logo">logo</a>
+            <a href ="index.html" id="logo">
+              <img src ="img/logo1.png" alt="Logo">
+            </a>
         </span>
          <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "products.html">Portfolio</a></li>
+                <li><a href = "products.html" class="active">Portfolio</a></li>
                 <li><a href = "about.html">About</a></li>
                 <li><a href = "Contact">Contact</a></li>
             </ul>
@@ -35,34 +37,40 @@
             <button class ="gjennomsiktig-knapp">Development</button>
         </div>
             
-        <div id ="container" class="image-container">
+        <div class="image-container">
             <section class="default-flex">
           <article>
-
-            <h3>Branding</h3>
-            <!---Brukte chatgpt her for å få linjen under teksten-->
-            <hr class="linje">
-            <img src="https://placehold.co/400x400" alt="bilde 1">
-            <img src="https://placehold.co/400x400" alt="bilde 2">
-            <img src="https://placehold.co/400x400" alt="bilde 3">
-            <img src="https://placehold.co/400x400" alt="bilde 4" class="stort-bilde">
+            <section id="branding-section">
+              <h3>Branding</h3>
+                <!---Brukte chatgpt her for å få linjen under teksten-->
+                <hr class="linje">
+                <img src="https://placehold.co/400x400" alt="bilde 1">
+                
+                <img src="https://placehold.co/400x400" alt="bilde 2">
+                <img src="https://placehold.co/400x400" alt="bilde 3">
+                <img src="https://placehold.co/400x400" alt="bilde 4" class="stort-bilde">
+            </section>
           </article>      
 
           <article>
-        <h3>Design</h3>
-        <!---Brukte chatgpt her for å få linjen under teksten-->
-        <hr class="linje">
-        <img src="https://placehold.co/400x400" alt="bilde 5">
-        <img src="https://placehold.co/400x400" alt="bilde 6">
-        <img src="https://placehold.co/400x400" alt="bilde 7">
+            <section id="design-section">
+              <h3>Design</h3>
+                <!---Brukte chatgpt her for å få linjen under teksten-->
+                <hr class="linje">
+                <img src="https://placehold.co/400x400" alt="bilde 5">
+                <img src="https://placehold.co/400x400" alt="bilde 6">
+                <img src="https://placehold.co/400x400" alt="bilde 7">
+         </section>
         </article>
 
         <article>
-        <h3>Development</h3>
-        <!---Brukte chatgpt her for å få linjen under teksten-->
-        <hr class="linje">
-        <img src="https://placehold.co/400x400" alt="bilde 8" class="stort-bilde2">
-        <img src="https://placehold.co/400x400" alt="bilde 9" class="stort-bilde2">
+          <section id="development-section">
+            <h3>Development</h3>
+              <!---Brukte chatgpt her for å få linjen under teksten-->
+              <hr class="linje">
+              <img src="https://placehold.co/400x400" alt="bilde 8" class="stort-bilde2">
+              <img src="https://placehold.co/400x400" alt="bilde 9" class="stort-bilde2">
+          </section>
         </article>
 
         </div>
@@ -71,6 +79,18 @@
    
 </body>
 <footer>
-    
+    <aside id ="logo-footer">
+        <img src="img/logo1.png" alt="Company logo"></a>
+      </aside> 
+      <aside id="company-copyright">
+        Companyrights Companyname 2023
+      </aside>
+      <aside>
+        <a href="#" alt="Instagram">Instagram</a>
+        <a href="#" alt="Facebook">Facebook</a>
+        <a href="#" alt ="LinkedIn">LinkedIn</a>
+        </a>
+      </aside>  
 </footer>
+</body>
 </html>
