@@ -16,6 +16,12 @@ header{
     padding: auto;
 }
 
+header nav ul{
+    display: flex;
+    gap: 0.7rem;
+    list-style: none;
+}
+
 header, main, footer{
    padding: 1rem;
 }
@@ -23,18 +29,27 @@ header, main, footer{
 
 #logo img{
     width: 7%;
-    height: auto;
+   height: auto;
 }
+
+/*Brukte chatgpt for å få en boks rundt contact meg fargen gull på alle sider. Måtte legge til en id på contact i htmlen i vær side for å det til å funke.*/
+#contact-link{
+    background-color: #e6bd43;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+/**/
 
 
 
 .boks{
-    width:75%;
-    height: 30%;
+    width:900px;
+    height: 300px;
+    padding: 20px; 
+    margin: 40px;
     background-color:  lightgray;
     border: 1px solid #ccc;
-    padding: 5%;
-    margin: 7%;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -103,12 +118,12 @@ button{
 
 .company-name-boks{
     display: flex;
-    width:85%;
-    height: 30%;
+    width:900px;
+    height: 300px;
+    padding: 20px; 
+    margin: 40px;
     background-color:  lightgray;
     border: 1px solid #ccc;
-    padding: 6%;
-    margin: 7%;
     text-align: left;
     flex-direction: column;
     align-items: center;
@@ -118,9 +133,10 @@ button{
     height:225px;
     width:400px;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     margin-left: 450px;
     margin-right: 10%;
+    padding-bottom: 10px;
 }
 
 
