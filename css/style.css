@@ -26,22 +26,80 @@ header, main, footer{
    padding: 1rem;
 }
 
+main{
+   width: 100%;
+}
+
 
 #logo img{
     width: 7%;
    height: auto;
 }
 
-/*Brukte chatgpt for å få en boks rundt contact meg fargen gull på alle sider. Måtte legge til en id på contact i htmlen i vær side for å det til å funke.*/
-#contact-link{
+/*Chatgpt for styling av bildene og plassering ved siden av hverandre*/
+#branding-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.article-card{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.branding-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#design-section .design-article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#development-section .development-article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.article-card {
+   /*max-width:350px;
+   min-width:200px;*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.article-card img{
+    width: 85%;
+    height:auto;
+    margin-bottom: 10px;
+     max-width: 100%;
+}
+
+.article-card h4{
+    margin-top: 10px;
+}
+
+/*til hit*/
+
+
+/*Chat gpt for styling av gul boks rundt contact*/
+#contact-link {
     background-color: #e6bd43;
     padding: 5px 10px;
-    border-radius: 5px;
     color: black;
+    border-radius: 5px;
 }
-/**/
-
-
 
 .boks{
     width:900px;
@@ -52,9 +110,7 @@ header, main, footer{
     border: 1px solid #ccc;
     text-align: center;
     flex-direction: column;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 
 .boks-inni{
@@ -166,16 +222,17 @@ button{
     
 }
 
-#produkter-main h3{
+.produkter-main h3{
     text-align: left;
 }
 
-#produkter-main .produkt-knapper{
+.produkter-main .produkt-knapper{
     display: flex;
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
 }
+
 .liten-boks{
     height:300px;
     width:900px;
@@ -187,47 +244,6 @@ button{
     justify-content: space-between;
     align-items: center;
     margin: 40px auto;
-}
-
-/*Chatgpt for å få bildene under hverandre og evt endre størrelse på bildene*/
-.image-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.image-container img{
-    width: 30%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    height: auto;
-}
-
-.image-container img.stort-bilde{
-    width: 60%;
-    margin-right: 38%;
-}
-
-.image-container img.stort-bilde2{
-    width: 47%;
-    margin-right: 2%;
-}
-
-.image-container p {
-    text-align: center;
-    width: 100%;
-}
-
-/*Til hit*/
-
-/*Chatgpt for styling av linjen*/
-.linje{
-    border:1px;
-    height: 2px;
-    background-color: #e6bd43;
-    
 }
 
 .portfolio-boks{
@@ -350,46 +366,76 @@ button{
     width: 70%;
 }
 
-/*Chatgpt for artikkelkortene og styling*/
-.article-card{
-    max-width: 350px;
-    min-width: 200px;
-    width: 100%;
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 15px;
+
+
+/*Chatgpt for styling av contact us og contact information*/
+.contact-container{
+    background-color:whitesmoke;
+    height:450px;
+    width:944px;
+    flex: 1;
+    border:none;
+    padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
-.article-card img{
+
+#contact-info{
+    width: 48%;
+}
+
+
+#contact-us{
+    width: 48%;
+    text-align: left;
+    padding: 4%;
+    padding-bottom: 3%;
+   }
+
+#contact-us,
+#contact-info{
+    width: 45%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label{
     width: 100%;
-    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.article-card h2{
-    font-size:1.5rem;
-    margin-top: 10px;
+input,textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
-.article-card p{
-    font-size: 1rem;
-    color: #555;
-    margin-top: 8px;
-}
 
-.article-card .read-more {
-    display: block;
-    margin-top: 15px;
-    color: #e6bd43;
-    text-decoration: none;
+#contact-info h2,
+#contact-info h4,
+#contact-us h4{
     font-weight: bold;
 }
 
-.article-card .read-more:hover{
-    text-decoration: underline;
+#contact-us h4,
+#contact-info h4{
+    margin-bottom: 10px;
 }
-
+.contact-button{
+    width: 100%;
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    color: black;
+}
 /*Til hit*/
-
 
 footer{
     background-color: #252525;
@@ -454,3 +500,11 @@ nav a.active{
     border-bottom: 2px solid #e6bd43;
 }
 
+/*Chatgpt for styling av linjen*/
+.linje{
+    border:1px;
+    height: 2px;
+    background-color: #e6bd43;
+    width: auto;
+    
+}
