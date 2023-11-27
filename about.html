@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/fonter/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fonter/css/brands.css" rel="stylesheet">
+    <link href="css/fonter/css/solid.css" rel="stylesheet">
     <link rel = "stylesheet" href ="css/style.css" type ="text/css">
     <title>Document</title>
 </head>
@@ -18,7 +22,7 @@
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "products.html">Portfolio</a></li>
                 <li><a href = "about.html" class="active">About</a></li>
-                <li><a href = "#contact" id="contact-link">Contact</a></li>
+                <li><a href = "#contact-us" id="contact-link">Contact</a></li>
             </ul>
             <div class ="company-name-boks" id="om-oss">
                 <div class="name-boks-tekst">
@@ -26,29 +30,43 @@
                 <h3>About our company</h3>
                 <p>Duis vitae dolor faucibus, efficitur arcu sit amet, dictum mi. Fusce scelerisque, ante in egestas rutrum, eros eros vestibulum justo, in ultrices neque dui in ligula. 
                    Curabitur tempus ac justo vitae vulputate. </p>
-                   <button class ="getintouch-knapp">Get in touch width us</button>   
+                   <a href ="#contact-us" class="getintouch-knapp">Get in touch with us</a>
             </div>  
            </div>  
          </nav>
         </header> 
     <main>
     
-        <section id="branding-seksjon">
+        <section id="our-services-section">
             <h2>Our services</h2>
         <article>
+            <span class="services-ikon">
+                <i class="fa-solid fa-people-group"></i>
+            </span>
+            <h2>Branding</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>  
+        </article>
+
+        <article>
+            <span class="services-ikon">
+                <i class="fa-solid fa-cloud-arrow-up"></i>  
+            </span>
             <h2>Branding</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            
         </article>
+
         <article>
+            <span class="services-ikon">
+                <i class="fa-solid fa-code"></i>   
+            </span>
             <h2>Branding</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </article>
+
         <article>
-            <h2>Branding</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </article>
-        <article>
+            <span class="services-ikon">
+                <i class="fa-solid fa-wifi"></i>   
+            </span>   
             <h2>Branding</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </article>
@@ -82,17 +100,20 @@
                 <button type="submit">Submit</button>  
             </form>
      </section>
-     <section id ="contact-us"> 
+     <article id ="contact-us"> 
          <h4>Contact information</h4>
          <p>Address: B R A veien 4, 1757 Halden</p>
          <p>Phone: +47 69 60 80 00</p>
          <p>Email:postmottak@hiof.no</p>
-        </section>
+     </article>
           <!--Til hit-->
         </section> 
+        <div id="map-container">
+            <img src="img/Skjermbilde 2023-11-27 kl. 11.37.21.png" alt="kart der vi ligger" width="944" height="250"> 
+          </div>
     </main>
     <footer>
-        <aside id ="logo-footer">
+        <aside id ="logo-footer"> 
             <a href="index.html">
             <img src="img/logo1.png" alt="Company logo">
         </a>
@@ -100,10 +121,18 @@
           <aside id="company-copyright">
             Companyrights Companyname 2023
           </aside>
-          <aside>
-            <a href="#" alt="Instagram">Instagram</a>
-            <a href="#" alt="Facebook">Facebook</a>
-            <a href="#" alt ="LinkedIn">LinkedIn</a>
+          <aside id ="some-logo">
+            <a href= "https://www.instagram.com/" title ="Instagram">
+              <i class="fa-brands fa-instagram fa-3x"></i> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+          </a>
+
+            <a href="https://www.facebook.com/" title ="Facebook"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+              <i class="fa-brands fa-facebook fa-3x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" title ="LinkedIn"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+              <i class="fa-brands fa-linkedin fa-3x"></i>               
+            </a>
           </aside>  
     </footer>
 </body>

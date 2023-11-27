@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/fonter/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fonter/css/brands.css" rel="stylesheet">
+    <link href="css/fonter/css/solid.css" rel="stylesheet">
     <link rel = "stylesheet" href ="css/style.css" type ="text/css">
     <title>Document</title>
 </head>
@@ -19,7 +23,7 @@
             <li><a href = "index.html" class="active">Home</a></li>
             <li><a href = "products.html">Portfolio</a></li>
             <li><a href = "about.html">About</a></li>
-            <li><a href = "about.html#contact" id="contact-link">Contact</a></li> <!--Brukte chatgpt her for å få lenket opp contact delen til alle sidene-->
+            <li><a href = "about.html#contact-us" id="contact-link">Contact</a></li> <!--Brukte chatgpt her for å få lenket opp contact delen til alle sidene-->
         </ul>
      </nav>
 
@@ -28,7 +32,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempor sapien et nisl hendrerit, nec pellentesque lorem efficitur.
          Mauris varius vestibulum risus, a gravida dolor pretium consequat. 
          <div class ="boks-inni">
-         <button class="stor-knapp"><a href="about.html#branding-seksjon">Read more about our services</a></button>
+         <a href ="about.html#our-services-section" class="stor-knapp">Read more about our services</a>
      </div>
     </div>
     </header>
@@ -48,23 +52,23 @@
             Morbi laoreet nulla nec justo viverra fringilla et id justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nunc id augue ante.
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nunc augue, ultrices volutpat vehicula a, viverra eu tellus. 
-            <button class ="liten-knapp"><a href="about.html#om-oss">more about us</a></button>
+            <a href="about.html#om-oss" class="liten-knapp">More about us</a> 
          </div>
         </div> 
     </section>
-    <h2>Our services</h2>
         <section class = "services">
-            <article id="branding-section">
+          <h2>Our services</h2>
+            <article id="branding-services">
                 <h3><a href="products.html#branding-section">Branding</a></h3>
                 Fusce et maximus lectus, nec sodales ipsum. Integer id quam id arcu imperdiet interdum. Phasellus rutrum rhoncus arcu vel posuere. 
            </article>
 
-            <article id="design-section">
+            <article id="design-services">
                 <h3><a href ="products.html#design-section">Design</a></h3>
                 Fusce et maximus lectus, nec sodales ipsum. Integer id quam id arcu imperdiet interdum. Phasellus rutrum rhoncus arcu vel posuere. 
            </article>
 
-            <article id="development-section">
+            <article id="development-services">
                 <h3><a href ="products.html#development-section">Development</a></h3>
                 Fusce et maximus lectus, nec sodales ipsum. Integer id quam id arcu imperdiet interdum. Phasellus rutrum rhoncus arcu vel posuere. 
            </article>
@@ -78,8 +82,10 @@
 
      <section class="under-boks">
       <h3>Sign up for our newsletter</h3>
-     <section class="button">
+     <section class="placeholder">
        <input type="text" placeholder="">
+     </section>
+     <section class="button">
        <button>Sign me up</button>
      </section>
     </section>
@@ -94,10 +100,18 @@
           <aside id="company-copyright">
             Companyrights Companyname 2023
           </aside>
-          <aside>
-            <a href="#" alt="Instagram">Instagram</a>
-            <a href="#" alt="Facebook">Facebook</a>
-            <a href="#" alt ="LinkedIn">LinkedIn</a>
+
+          <aside id ="some-logo">
+            <a href= "https://www.instagram.com/" title="Instagram">
+              <i class="fa-brands fa-instagram fa-3x"></i> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+          </a>
+ 
+            <a href="https://www.facebook.com/" title="Facebook"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+              <i class="fa-brands fa-facebook fa-3x"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" title ="LinkedIn"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+              <i class="fa-brands fa-linkedin fa-3x"></i>               
             </a>
           </aside>
     </footer>

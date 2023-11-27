@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/fonter/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fonter/css/brands.css" rel="stylesheet">
+    <link href="css/fonter/css/solid.css" rel="stylesheet">
     <link rel = "stylesheet" href = "css/style.css" type = "text/css">
     <title>Document</title>
 </head>
@@ -18,7 +22,7 @@
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "products.html" class="active">Portfolio</a></li>
                 <li><a href = "about.html">About</a></li>
-                <li><a href = "about.html#contact" id="contact-link">Contact</a></li> <!--Brukte chatgpt her for å få lenket opp contact delen til alle sidene-->
+                <li><a href = "about.html#contact-us" id="contact-link">Contact</a></li> <!--Brukte chatgpt her for å få lenket opp contact delen til alle sidene-->
             </ul>
             <div class ="portfolio-boks">
             <h1>Portfolio</h1>
@@ -32,17 +36,19 @@
         <!---Brukte chatgpt her for å få linjen under teksten-->
         <hr class="linje">
         <div class ="produkt-knapper">
-            <button class ="gjennomsiktig-knapp">Branding</button>
-            <button class ="gjennomsiktig-knapp">Design</button>
-            <button class ="gjennomsiktig-knapp">Development</button>
+            <a href="#branding-section" class ="gjennomsiktig-knapp">Branding</a>
+            <a href ="#design-section" class ="gjennomsiktig-knapp">Design</a>
+             <a href = "#development-section" class ="gjennomsiktig-knapp">Development</a>
         </div>
       </article>
-
+ 
+      <article>
         <section id="branding-section">
           <h3>Branding</h3>
           <!---Brukte chatgpt her for å få linjen under teksten, brukte chatgpt for å få artikkelkortene inn i koden.-->
           <hr class="linje">
           <div class="branding-article">
+
           <article class="article-card">
             <img src="https://placehold.co/400x400" alt="bilde 1">
             <h4>Branding article 1</h4>
@@ -121,10 +127,17 @@
       <aside id="company-copyright">
         Companyrights Companyname 2023
       </aside>
-      <aside>
-        <a href="#" alt="Instagram">Instagram</a>
-        <a href="#" alt="Facebook">Facebook</a>
-        <a href="#" alt ="LinkedIn">LinkedIn</a>
+      <aside id ="some-logo">
+        <a href= "https://www.instagram.com/" title ="Instagram">
+          <i class="fa-brands fa-instagram fa-3x"></i> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+      </a>
+
+        <a href="https://www.facebook.com/" title ="Facebook"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+          <i class="fa-brands fa-facebook fa-3x"></i>
+        </a>
+ 
+        <a href="https://www.linkedin.com/" title ="LinkedIn"> <!---fa-3x er for å endre størrelsen på ikonet. Brukte chatgpt-->
+          <i class="fa-brands fa-linkedin fa-3x"></i>               
         </a>
       </aside>  
 </footer>
