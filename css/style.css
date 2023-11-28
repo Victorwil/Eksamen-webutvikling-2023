@@ -708,6 +708,11 @@ button {
     padding: 8px;
 }
 
+
+.services h3 a:hover {
+    color: #e6bd43;
+}
+
 /* klasse for styling av knappen, ChatGPT */
 .signup-button {
     padding: 10px;
