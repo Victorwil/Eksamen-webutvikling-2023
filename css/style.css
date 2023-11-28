@@ -46,11 +46,11 @@ main{
 
 
 #our-services-section article{
-    flex: 0 1 calc(25% auto); /*Chatgpt for å kunne legge elementene på linje, 4 rader med auto mellomrom*/
+    flex: 0 1 calc(25% - 20px); /*Chatgpt for å kunne legge elementene på linje, 4 rader med auto mellomrom*/
     margin: 0 10px 20px 0;
     text-align: center;
     font-size: 72%; 
-    width: 200px;
+    max-width: 200px;
 
 }
 
@@ -106,6 +106,12 @@ main{
 }
 
 
+.stort-bilde{
+    width: 550px;
+    max-height: 350px;
+    object-fit: cover;   
+}
+
 .article-card{
     flex: 1;
     margin: 10px;
@@ -147,7 +153,13 @@ main{
     height:auto;
     margin-bottom: 10px;
      max-width: 100%;
+     transition: transform 0.3s; /*Chatgpt for overgangseffekt når man hovrer*/
 }
+/*Chatgpt for endring av størrelse når man hovrer over Størrelsen blir 110% når man hovrer over*/
+.article-card:hover img{
+    transform: scale(1.1);
+}
+
 
 .article-card h4{
     margin-top: 10px;
@@ -156,7 +168,7 @@ main{
 /*til hit*/
 
 
-/*Chat gpt for styling av gul boks rundt contact*/
+/*Chatgpt for styling av gul boks rundt contact*/
 #contact-link {
     background-color: #e6bd43;
     padding: 5px 10px;
@@ -176,15 +188,26 @@ main{
     align-items: center; 
 }
 
-.boks-inni{
-   width: 30%; 
-   height: 1rem;
-   background-color: #e6bd43;
-   padding: 1rem;
-   border: none;
-   margin: 20px auto;
-   justify-content: center;  
+.boks h1{
+    padding-top: 25px;
+    text-align: center;
 }
+
+.boks h2{
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.boks a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 
 /*Brukte chatgpt for å få den grå boksen til å være inni og vedsiden av tekst og knapp*/
 .gra-boks{
@@ -203,7 +226,7 @@ main{
 /*Til hit*/
 
 
-
+/*Styling av knapp, chatGPT*/
 button{
     display: flex;
     justify-content: center;
@@ -216,26 +239,77 @@ button{
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
-   margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
+#signup-button{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /*ChatGPT for overgangseffekt når man hovrer over knappen*/
+}
 
+#signup-button button:hover{
+    background-color: black;
+    color: #e6bd43;
+}
 
 .stor-knapp{ 
-    width: 100%;
-    height: 100%;
-    font-size: 95%;
-
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #e6bd43;
+   border: none;
+   text-decoration: none;
+   color: black;
+   transition: background-color 0.3s, color 0.3s;
 }
 
-.getintouch-knapp{
-    width: 55%;
-    height: 45%;
-    font-size: 75%;
-    font-weight: bold;
+.stor-knapp:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+/*Chatgpt for hover effekt og størrelse på knapp*/
+.getintouch-knapp {
+    display: inline-block;
+    padding: 10px 20px; 
+    font-size: 14px; 
     background-color: #e6bd43;
-    
+    border: none;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /*ChatGPT for overgangseffekt når man hovrer over knappen*/
+    font-weight: bold;
 }
+
+
+.getintouch-knapp:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+/*Til hit*/
+
+/*Chatgpt for styling av knapp, og hover effekt*/
+button[type="submit"] {
+    padding: 10px 20px; 
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+/*Til hit*/
 
 .company-name-boks{
     display: flex;
@@ -267,7 +341,7 @@ button{
     text-align: left; /*Brukte chatgpt for å få boksen til venstre*/
     border: 1px solid #333;
    justify-content: right;
-   width: 150px;
+   width: 200px;
    height: 40px;
    margin: 20px  0; /*Brukte chatgpt for å få boksen til venstre*/
    padding: 10px;
@@ -290,7 +364,14 @@ button{
     justify-content: left;
     align-items: left;
     color: black;
+    transition: background-color 0.3s, color 0.3s; /*ChatGPT for overgangseffekt når man hovrer over knappen*/
 }
+ /*ChatGPT, endring av fargen i boksen og tekst npr man hovrer over */
+.gjennomsiktig-knapp:hover{
+    background-color: black;
+    color: #e6bd43;
+}
+/**/
 
 .produkter-main h3{
     text-align: left;
@@ -306,7 +387,7 @@ button{
 .liten-boks{
     height:300px;
     width:900px;
-    background-color: transparent;
+    background-color:#e6bd43;
     border: 2px solid #333;
     padding: 30px;
     margin: 20px auto;
@@ -316,6 +397,24 @@ button{
     margin: 40px auto;
 }
 
+.tekst-container a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+}
+.liten-knapp{
+    text-align: center;
+    padding-left: 60px;
+    transition: background-color 0.3s, color 0.3s; /*Chatgpt, la til overgangseffekt når man hovrer*/
+}
+/*Chatgpt, endret fargen i knappen og teksten når man hovrer over.*/
+.liten-knapp:hover{
+    background-color: black;
+    color: #e6bd43;
+}
+/*Til hit*/
 .portfolio-boks{
     width: 900px;
     height: 200px;
@@ -366,14 +465,29 @@ section article{
  /*Brukte chatgpt for å få teksten vedsiden av hverandre og h2 sentrert*/
 .services {
     display:flex;
-    justify-content:space-between;
-    padding: 30px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.services h2{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.services h3 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 .services article{
+    margin: 0 0 20px;
     width: 25%;
     margin-bottom: 10px;
+    text-align: left;
 }
 /*Til hit*/
 
@@ -386,13 +500,6 @@ header nav ul{
     padding: 0.5rem;
     list-style: none;
     gap: 0.5rem;
-}
-/*Brukte chatgpt for å få linkene til de andre sidene å bytte farge og få bort understrekene*/
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  
 }
 
 /*Chatgpt for logoene til å ligge ved siden av hverandre, i boks med gull farge, og størrelse på boks og logoene*/
@@ -466,29 +573,24 @@ input{
 
 /*Til hit*/
 
-
-
 /*Chatgpt for styling av contact us og contact information*/
 .contact-container{
     background-color:whitesmoke;
-    height:500px;
+    height:auto;
     width:944px;
     border:none;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     margin: 0 auto;
-    
 }
 
 .contact-container h2{
     width: 100%;
-    height: 80%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -497,25 +599,14 @@ input{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
 
-
-#contact-info{
-    width: 48%;
-
-}
-
-
-#contact-us{
-    width: 48%;
-    text-align: left;
-    padding: 4%;
-    padding-bottom: 3%;
-   }
 
 #contact-us,
 #contact-info{
-    width: 38%;
+    width: 48%;
     box-sizing: border-box;
 }
 
@@ -613,12 +704,31 @@ button {
     width: 80%; 
     background-color: #e6bd43;
     border: none;
-    cursor: pointer;
     font-weight: bold;
     padding: 8px;
 }
 
-/*Chatgpt for å få linjen under home,portfolio osv til å bli når man trykket seg inn la inn active på hver av sidene i htmlen for å få det til å funke*/
+/* klasse for styling av knappen, ChatGPT */
+.signup-button {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #e6bd43;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*Hover effekt, chatGPT */
+.signup-button:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
+
+/*Chatgpt for å få linjen under home,portfolio osv til å bli når man trykket seg inn, la inn active på hver av sidene i htmlen for å få det til å funke*/
 nav a{
     text-decoration: none;
     color: black;
@@ -626,6 +736,28 @@ nav a{
 }
 nav a.active{
     border-bottom: 2px solid #e6bd43;
+}
+/**/
+
+/*ChatGPT, hover effekt for contact i header*/
+#contact-link:hover {
+    background-color: black;
+    color: #e6bd43; 
+}
+/**/
+
+/*Brukte chatgpt for å få linkene til de andre sidene å bytte farge og få bort understrekene*/
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal; 
+}
+/*Gjør fet når man er på siden, chatGPT*/
+header nav ul li a.active{
+    font-weight: bold;
+}
+#contact-link{
+    font-weight: bold;
 }
 
 /*Chatgpt for styling av linjen*/
